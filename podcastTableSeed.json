@@ -1,0 +1,22 @@
+[
+    {
+        "podcastId": "hujie",
+        "title": "React Podcast",
+        "description": "Conversations about React with your favorite developers.",
+        "keywords": [],
+        "email": "wanghujie@gmail.com",
+        "language": "en-us",
+        "lastBuildDate": "Thu, 11 Feb 2021 18:07:24 +0000",
+        "pubDate": "Thu, 17 Dec 2020 13:00:00 +0000",
+        "author": "hujie",
+        "image": {
+            "url": "https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/13514273/13514273-1615841656411-92f1849f607f8.jpg",
+            "title": "React Podcast",
+            "link": "https://laterclub.com/podcast/hujie"
+        },
+        "userId": "142d08c3-b68d-4f48-822c-a2d95b557eee",
+        "feedUrl": "http://localhost:4569/clubhouse-audio/test/index.rss",
+        "authorClubhouseId": "timothywangdev",
+        "authorClubhouseIdVerified": true
+    }
+]

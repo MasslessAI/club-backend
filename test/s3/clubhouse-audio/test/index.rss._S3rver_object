@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <copyright>All rights reserved</copyright>
+    <title>test podcast</title>
+    <description>test podcast test podcast test podcast</description>
+    <feedUrl>http://localhost:4569/clubhouse-audio/test/index.rss</feedUrl>
+    <generator>https://laterclub.com</generator>
+    <image>
+      <title>test podcast</title>
+      <link>https://laterclub.com/podcast/test</link>
+      <url>http://localhost:4569/clubhouse-audio/PODCAST_COVER/9857d9af-6e5c-4603-a8e6-a290766809b7.png</url>
+    </image>
+    <itunes:author>test</itunes:author>
+    <itunes:category text=""/>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:image href="http://localhost:4569/clubhouse-audio/PODCAST_COVER/9857d9af-6e5c-4603-a8e6-a290766809b7.png"/>
+    <itunes:keywords/>
+    <itunes:owner>
+      <itunes:name>test</itunes:name>
+      <itunes:email>test@test.com</itunes:email>
+    </itunes:owner>
+    <itunes:summar>test podcast test podcast test podcast</itunes:summar>
+    <language>en-us</language>
+    <pubDate>Mon, 12 Apr 2021 18:24:44 -0400</pubDate>
+    <lastBuildDate>Mon, 12 Apr 2021 18:24:44 -0400</lastBuildDate>
+    <link>https://laterclub.com/podcast/test</link>
+    <item>
+      <itunes:duration>31</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>qwdqwqdqwdq</itunes:summary>
+      <itunes:image href="http://localhost:4569/clubhouse-audio/EPISODE_COVER/9857d9af-6e5c-4603-a8e6-a290766809b7.png.png"/>
+      <itunes:author>test</itunes:author>
+      <itunes:subtitle>qwdqwqdqwdq</itunes:subtitle>
+      <itunes:episode>123</itunes:episode>
+      <podcastId>test</podcastId>
+      <creator>test</creator>
+      <author>test</author>
+      <link>https://laterclub.com/podcast/test/0c182a05-6a31-44ae-b66f-031bddf225a7</link>
+      <language>en-us</language>
+      <episodeId>0c182a05-6a31-44ae-b66f-031bddf225a7</episodeId>
+      <title>hehehe</title>
+      <pubDate>2021-04-08T19:42:04.617Z</pubDate>
+      <content>&lt;p&gt;qwdqwqdqwdq&lt;/p&gt;</content>
+      <contentSnippet>qwdqwqdqwdq</contentSnippet>
+      <enclosure length="489170" type="audio/mpeg" url="http://localhost:4569/clubhouse-audio/test/0c182a05-6a31-44ae-b66f-031bddf225a7.mp3"/>
+      <content:encodedSnippet>qwdqwqdqwdq</content:encodedSnippet>
+      <topic>💰 Venture Capital</topic>
+      <guid>0c182a05-6a31-44ae-b66f-031bddf225a7</guid>
+      <audioMetadata>{"streams":[{"index":0,"codec_name":"mp3","codec_long_name":"MP3 (MPEG audio layer 3)","profile":"unknown","codec_type":"audio","codec_time_base":"1/48000","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":48000,"channels":2,"channel_layout":"stereo","bits_per_sample":0,"id":"N/A","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/14112000","start_pts":324870,"start_time":0.023021,"duration_ts":431149824,"duration":30.552,"bit_rate":128000,"max_bit_rate":"N/A","bits_per_raw_sample":"N/A","nb_frames":"N/A","nb_read_frames":"N/A","nb_read_packets":"N/A","tags":{"encoder":"Lavc58.54"},"disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0}}],"format":{"filename":"/tmp/0c182a05-6a31-44ae-b66f-031bddf225a7.mp4.mp3","nb_streams":1,"nb_programs":0,"format_name":"mp3","format_long_name":"MP2/3 (MPEG audio layer 2/3)","start_time":0.023021,"duration":30.552,"size":489170,"bit_rate":128088,"probe_score":51,"tags":{"major_brand":"mp42","minor_version":"0","compatible_brands":"mp42mp41isomavc1","encoder":"Lavf58.29.100"}},"chapters":[]}</audioMetadata>
+      <category>🧭 Tech</category>
+      <content:encoded>&lt;p&gt;qwdqwqdqwdq&lt;/p&gt;</content:encoded>
+    </item>
+    <item>
+      <itunes:duration>31</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>aasdwqdwqdwqds</itunes:summary>
+      <itunes:image href="http://localhost:4569/clubhouse-audio/PODCAST_COVER/9857d9af-6e5c-4603-a8e6-a290766809b7.png"/>
+      <itunes:author>test</itunes:author>
+      <itunes:subtitle>aasdwqdwqdwqds</itunes:subtitle>
+      <itunes:episode>2</itunes:episode>
+      <podcastId>test</podcastId>
+      <creator>test</creator>
+      <author>test</author>
+      <link>https://laterclub.com/podcast/test/327a778d-36dd-4f37-920b-e6ae9552112d</link>
+      <language>en-us</language>
+      <episodeId>327a778d-36dd-4f37-920b-e6ae9552112d</episodeId>
+      <title>hehe 1</title>
+      <pubDate>2021-04-08T19:47:56.095Z</pubDate>
+      <content>&lt;p&gt;aasdwqdwqdwqds&lt;/p&gt;</content>
+      <contentSnippet>aasdwqdwqdwqds</contentSnippet>
+      <enclosure length="489170" type="audio/mpeg" url="http://localhost:4569/clubhouse-audio/test/327a778d-36dd-4f37-920b-e6ae9552112d.mp3"/>
+      <content:encodedSnippet>aasdwqdwqdwqds</content:encodedSnippet>
+      <topic>🦄 Startups</topic>
+      <guid>327a778d-36dd-4f37-920b-e6ae9552112d</guid>
+      <audioMetadata>{"streams":[{"index":0,"codec_name":"mp3","codec_long_name":"MP3 (MPEG audio layer 3)","profile":"unknown","codec_type":"audio","codec_time_base":"1/48000","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":48000,"channels":2,"channel_layout":"stereo","bits_per_sample":0,"id":"N/A","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/14112000","start_pts":324870,"start_time":0.023021,"duration_ts":431149824,"duration":30.552,"bit_rate":128000,"max_bit_rate":"N/A","bits_per_raw_sample":"N/A","nb_frames":"N/A","nb_read_frames":"N/A","nb_read_packets":"N/A","tags":{"encoder":"Lavc58.54"},"disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0}}],"format":{"filename":"/tmp/327a778d-36dd-4f37-920b-e6ae9552112d.mp4.mp3","nb_streams":1,"nb_programs":0,"format_name":"mp3","format_long_name":"MP2/3 (MPEG audio layer 2/3)","start_time":0.023021,"duration":30.552,"size":489170,"bit_rate":128088,"probe_score":51,"tags":{"major_brand":"mp42","minor_version":"0","compatible_brands":"mp42mp41isomavc1","encoder":"Lavf58.29.100"}},"chapters":[]}</audioMetadata>
+      <category>🧭 Tech</category>
+      <content:encoded>&lt;p&gt;aasdwqdwqdwqds&lt;/p&gt;</content:encoded>
+    </item>
+    <item>
+      <itunes:duration>31</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>qwdqwdwqdqwd</itunes:summary>
+      <itunes:image href="http://localhost:4569/clubhouse-audio/PODCAST_COVER/9857d9af-6e5c-4603-a8e6-a290766809b7.png"/>
+      <itunes:author>test</itunes:author>
+      <itunes:subtitle>qwdqwdwqdqwd</itunes:subtitle>
+      <itunes:episode>3</itunes:episode>
+      <podcastId>test</podcastId>
+      <creator>test</creator>
+      <author>test</author>
+      <link>https://laterclub.com/podcast/test/e7f49769-277a-4bce-8136-cb21934d79cc</link>
+      <language>en-us</language>
+      <episodeId>e7f49769-277a-4bce-8136-cb21934d79cc</episodeId>
+      <title>hehehehe</title>
+      <pubDate>2021-04-08T21:56:04.140Z</pubDate>
+      <content>&lt;p&gt;qwdqwdwqdqwd&lt;/p&gt;</content>
+      <contentSnippet>qwdqwdwqdqwd</contentSnippet>
+      <enclosure length="489170" type="audio/mpeg" url="http://localhost:4569/clubhouse-audio/test/e7f49769-277a-4bce-8136-cb21934d79cc.mp3"/>
+      <content:encodedSnippet>qwdqwdwqdqwd</content:encodedSnippet>
+      <topic>👣 Taoism</topic>
+      <guid>e7f49769-277a-4bce-8136-cb21934d79cc</guid>
+      <audioMetadata>{"streams":[{"index":0,"codec_name":"mp3","codec_long_name":"MP3 (MPEG audio layer 3)","profile":"unknown","codec_type":"audio","codec_time_base":"1/48000","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":48000,"channels":2,"channel_layout":"stereo","bits_per_sample":0,"id":"N/A","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/14112000","start_pts":324870,"start_time":0.023021,"duration_ts":431149824,"duration":30.552,"bit_rate":128000,"max_bit_rate":"N/A","bits_per_raw_sample":"N/A","nb_frames":"N/A","nb_read_frames":"N/A","nb_read_packets":"N/A","tags":{"encoder":"Lavc58.54"},"disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0}}],"format":{"filename":"/tmp/e7f49769-277a-4bce-8136-cb21934d79cc.mp4.mp3","nb_streams":1,"nb_programs":0,"format_name":"mp3","format_long_name":"MP2/3 (MPEG audio layer 2/3)","start_time":0.023021,"duration":30.552,"size":489170,"bit_rate":128088,"probe_score":51,"tags":{"major_brand":"mp42","minor_version":"0","compatible_brands":"mp42mp41isomavc1","encoder":"Lavf58.29.100"}},"chapters":[]}</audioMetadata>
+      <category>🕊 Faith</category>
+      <content:encoded>&lt;p&gt;qwdqwdwqdqwd&lt;/p&gt;</content:encoded>
+    </item>
+  </channel>
+</rss>

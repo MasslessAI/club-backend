@@ -1,0 +1,30 @@
+{
+  "name": "club-backend",
+  "description": "",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "serverless offline -s dev",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.6",
+    "fluent-ffmpeg": "^2.1.2",
+    "got": "^11.8.2",
+    "jsonfeed-to-rss": "^3.0.4",
+    "jsonwebtoken": "^8.5.1",
+    "jstoxml": "^2.0.3",
+    "jwk-to-pem": "^2.0.5",
+    "rss-parser": "^3.12.0",
+    "serverless-dynamodb-client": "0.0.2",
+    "uuid": "^8.3.2",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "serverless": "^2.30.3",
+    "serverless-bundle": "^4.2.2",
+    "serverless-dynamodb-local": "^0.2.39",
+    "serverless-offline": "^6.8.0",
+    "serverless-s3-local": "^0.6.7"
+  }
+}

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <copyright>All rights reserved</copyright>
+    <title>React Podcast</title>
+    <description>Conversations about React with your favorite developers.</description>
+    <feedUrl>http://localhost:4569/clubhouse-audio/hujie/index.rss</feedUrl>
+    <generator>https://laterclub.com</generator>
+    <image>
+      <title>React Podcast</title>
+      <link>https://laterclub.com/podcast/hujie</link>
+      <url>https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/13514273/13514273-1615841656411-92f1849f607f8.jpg</url>
+    </image>
+    <itunes:author>hujie</itunes:author>
+    <itunes:category text=""/>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/13514273/13514273-1615841656411-92f1849f607f8.jpg"/>
+    <itunes:keywords/>
+    <itunes:owner>
+      <itunes:name>hujie</itunes:name>
+      <itunes:email>wanghujie@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:summar/>
+    <language>en-us</language>
+    <pubDate>Thu, 01 Apr 2021 18:47:26 -0400</pubDate>
+    <lastBuildDate>Thu, 01 Apr 2021 18:47:26 -0400</lastBuildDate>
+    <link>https://laterclub.com/podcast/hujie</link>
+    <item>
+      <itunes:duration>31</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>qwdqwdwqd dwqd qwdwqdwqdwqd qwewd qwd</itunes:summary>
+      <itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/13514273/13514273-1615841656411-92f1849f607f8.jpg"/>
+      <itunes:author>hujie</itunes:author>
+      <itunes:subtitle>qwdqwdwqd dwqd qwdwqdwqdwqd qwewd qwd</itunes:subtitle>
+      <itunes:episode>123</itunes:episode>
+      <podcastId>hujie</podcastId>
+      <creator>hujie</creator>
+      <author>hujie</author>
+      <link>https://laterclub.com/podcast/hujie/26c7e4b5-79f8-4198-ba97-7cd014d65c35</link>
+      <language>en-us</language>
+      <episodeId>26c7e4b5-79f8-4198-ba97-7cd014d65c35</episodeId>
+      <title>elon musk example</title>
+      <pubDate>2021-04-01T22:38:41.684Z</pubDate>
+      <content>&lt;p&gt;qwdqwdwqd dwqd qwd&lt;/p&gt;&lt;p&gt;wq&lt;/p&gt;&lt;p&gt;d&lt;/p&gt;&lt;p&gt;wqd&lt;/p&gt;&lt;p&gt;wqd qwew&lt;/p&gt;&lt;p&gt;d q&lt;/p&gt;&lt;p&gt;wd&lt;/p&gt;</content>
+      <contentSnippet>qwdqwdwqd dwqd qwdwqdwqdwqd qwewd qwd</contentSnippet>
+      <enclosure length="489170" type="audio/mpeg" url="http://localhost:4569/clubhouse-audio/hujie/26c7e4b5-79f8-4198-ba97-7cd014d65c35.mp3"/>
+      <content:encodedSnippet>qwdqwdwqd dwqd qwdwqdwqdwqd qwewd qwd</content:encodedSnippet>
+      <topic>❓ Agnosticism</topic>
+      <guid>26c7e4b5-79f8-4198-ba97-7cd014d65c35</guid>
+      <audioMetadata>{"streams":[{"index":0,"codec_name":"mp3","codec_long_name":"MP3 (MPEG audio layer 3)","profile":"unknown","codec_type":"audio","codec_time_base":"1/48000","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":48000,"channels":2,"channel_layout":"stereo","bits_per_sample":0,"id":"N/A","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/14112000","start_pts":324870,"start_time":0.023021,"duration_ts":431149824,"duration":30.552,"bit_rate":128000,"max_bit_rate":"N/A","bits_per_raw_sample":"N/A","nb_frames":"N/A","nb_read_frames":"N/A","nb_read_packets":"N/A","tags":{"encoder":"Lavc58.54"},"disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0}}],"format":{"filename":"/tmp/26c7e4b5-79f8-4198-ba97-7cd014d65c35.mp4.mp3","nb_streams":1,"nb_programs":0,"format_name":"mp3","format_long_name":"MP2/3 (MPEG audio layer 2/3)","start_time":0.023021,"duration":30.552,"size":489170,"bit_rate":128088,"probe_score":51,"tags":{"major_brand":"mp42","minor_version":"0","compatible_brands":"mp42mp41isomavc1","encoder":"Lavf58.29.100"}},"chapters":[]}</audioMetadata>
+      <category>🕊 Faith</category>
+      <content:encoded>&lt;p&gt;qwdqwdwqd dwqd qwd&lt;/p&gt;&lt;p&gt;wq&lt;/p&gt;&lt;p&gt;d&lt;/p&gt;&lt;p&gt;wqd&lt;/p&gt;&lt;p&gt;wqd qwew&lt;/p&gt;&lt;p&gt;d q&lt;/p&gt;&lt;p&gt;wd&lt;/p&gt;</content:encoded>
+    </item>
+    <item>
+      <itunes:duration>31</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>wqsdqwdwqdwqd</itunes:summary>
+      <itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/13514273/13514273-1615841656411-92f1849f607f8.jpg"/>
+      <itunes:author>hujie</itunes:author>
+      <itunes:subtitle>wqsdqwdwqdwqd</itunes:subtitle>
+      <itunes:episode>123</itunes:episode>
+      <podcastId>hujie</podcastId>
+      <creator>hujie</creator>
+      <author>hujie</author>
+      <link>https://laterclub.com/podcast/hujie/80e86530-9d22-44f2-a7d0-8b54490de590</link>
+      <language>en-us</language>
+      <episodeId>80e86530-9d22-44f2-a7d0-8b54490de590</episodeId>
+      <title>qwdwqe</title>
+      <pubDate>2021-04-01T22:42:24.003Z</pubDate>
+      <content>&lt;h2&gt;wqsdqwdwqdwqd&lt;/h2&gt;</content>
+      <contentSnippet>wqsdqwdwqdwqd</contentSnippet>
+      <enclosure length="489170" type="audio/mpeg" url="http://localhost:4569/clubhouse-audio/hujie/80e86530-9d22-44f2-a7d0-8b54490de590.mp3"/>
+      <content:encodedSnippet>wqsdqwdwqdwqd</content:encodedSnippet>
+      <topic>🌙 Late Night</topic>
+      <guid>80e86530-9d22-44f2-a7d0-8b54490de590</guid>
+      <audioMetadata>{"streams":[{"index":0,"codec_name":"mp3","codec_long_name":"MP3 (MPEG audio layer 3)","profile":"unknown","codec_type":"audio","codec_time_base":"1/48000","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":48000,"channels":2,"channel_layout":"stereo","bits_per_sample":0,"id":"N/A","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/14112000","start_pts":324870,"start_time":0.023021,"duration_ts":431149824,"duration":30.552,"bit_rate":128000,"max_bit_rate":"N/A","bits_per_raw_sample":"N/A","nb_frames":"N/A","nb_read_frames":"N/A","nb_read_packets":"N/A","tags":{"encoder":"Lavc58.54"},"disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0}}],"format":{"filename":"/tmp/80e86530-9d22-44f2-a7d0-8b54490de590.mp4.mp3","nb_streams":1,"nb_programs":0,"format_name":"mp3","format_long_name":"MP2/3 (MPEG audio layer 2/3)","start_time":0.023021,"duration":30.552,"size":489170,"bit_rate":128088,"probe_score":51,"tags":{"major_brand":"mp42","minor_version":"0","compatible_brands":"mp42mp41isomavc1","encoder":"Lavf58.29.100"}},"chapters":[]}</audioMetadata>
+      <category>🥳 Hanging Out</category>
+      <content:encoded>&lt;h2&gt;wqsdqwdwqdwqd&lt;/h2&gt;</content:encoded>
+    </item>
+    <item>
+      <itunes:duration>31</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>qwwqqwdqwdwqdwqd</itunes:summary>
+      <itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/13514273/13514273-1615841656411-92f1849f607f8.jpg"/>
+      <itunes:author>hujie</itunes:author>
+      <itunes:subtitle>qwwqqwdqwdwqdwqd</itunes:subtitle>
+      <itunes:episode>2222</itunes:episode>
+      <podcastId>hujie</podcastId>
+      <creator>hujie</creator>
+      <author>hujie</author>
+      <link>https://laterclub.com/podcast/hujie/aa80a38f-e22e-4306-b8c8-d04ba9d1481b</link>
+      <language>en-us</language>
+      <episodeId>aa80a38f-e22e-4306-b8c8-d04ba9d1481b</episodeId>
+      <title>qwdwqdwq</title>
+      <pubDate>2021-04-01T22:43:56.991Z</pubDate>
+      <content>&lt;p&gt;qwwqqwdqwdwqdwqd&lt;/p&gt;</content>
+      <contentSnippet>qwwqqwdqwdwqdwqd</contentSnippet>
+      <enclosure length="489170" type="audio/mpeg" url="http://localhost:4569/clubhouse-audio/hujie/aa80a38f-e22e-4306-b8c8-d04ba9d1481b.mp3"/>
+      <content:encodedSnippet>qwwqqwdqwdwqdwqd</content:encodedSnippet>
+      <topic>👩&zwj;💻 Coworking</topic>
+      <guid>aa80a38f-e22e-4306-b8c8-d04ba9d1481b</guid>
+      <audioMetadata>{"streams":[{"index":0,"codec_name":"mp3","codec_long_name":"MP3 (MPEG audio layer 3)","profile":"unknown","codec_type":"audio","codec_time_base":"1/48000","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":48000,"channels":2,"channel_layout":"stereo","bits_per_sample":0,"id":"N/A","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/14112000","start_pts":324870,"start_time":0.023021,"duration_ts":431149824,"duration":30.552,"bit_rate":128000,"max_bit_rate":"N/A","bits_per_raw_sample":"N/A","nb_frames":"N/A","nb_read_frames":"N/A","nb_read_packets":"N/A","tags":{"encoder":"Lavc58.54"},"disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0}}],"format":{"filename":"/tmp/aa80a38f-e22e-4306-b8c8-d04ba9d1481b.mp4.mp3","nb_streams":1,"nb_programs":0,"format_name":"mp3","format_long_name":"MP2/3 (MPEG audio layer 2/3)","start_time":0.023021,"duration":30.552,"size":489170,"bit_rate":128088,"probe_score":51,"tags":{"major_brand":"mp42","minor_version":"0","compatible_brands":"mp42mp41isomavc1","encoder":"Lavf58.29.100"}},"chapters":[]}</audioMetadata>
+      <category>🥳 Hanging Out</category>
+      <content:encoded>&lt;p&gt;qwwqqwdqwdwqdwqd&lt;/p&gt;</content:encoded>
+    </item>
+  </channel>
+</rss>

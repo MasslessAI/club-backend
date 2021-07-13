@@ -1,0 +1,39 @@
+POST http://localhost:4000/dev HTTP/1.1
+content-type: application/json
+
+{
+	"action": "UPDATE_EPISODE",
+	"payload": {
+		"podcastId": "hujie",
+		"episodeId": "990a9681-9752-44cf-8821-650f267b2b87",
+		"data": {
+			"content": "fuck",
+			"title": "title fuck",
+			"itunes": {
+				"summary": "fuck summary",
+				"subtitle": "fuck summary"
+			}
+		}
+	}
+}
+###
+
+POST http://localhost:4000/dev HTTP/1.1
+content-type: application/json
+
+{
+	"action": "GET_EPISODE_UPLOAD_URL"
+}
+
+###
+
+POST http://localhost:4000/dev HTTP/1.1
+content-type: application/json
+
+{
+	"action": "ADD_EPISODE",
+	"payload": {
+		"podcastId": "hujie",
+		"episodeId": "ff749c16-0b2e-447b-9f2a-8ee37a35d10a"
+	}
+}

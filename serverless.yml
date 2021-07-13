@@ -1,0 +1,236 @@
+# Welcome to Serverless!
+#
+# This file is the main config file for your service.
+# It's very minimal at this point and uses default values.
+# You can always add more config options for more control.
+# We've included some commented out config examples here.
+# Just uncomment any of them to get that config option.
+#
+# For full config options, check the docs:
+#    docs.serverless.com
+#
+# Happy Coding!
+
+service: club-backend
+# app and org for use with dashboard.serverless.com
+app: club-backend-app
+org: wanghujie
+
+# You can pin your service to only deploy with a specific Serverless version
+# Check out our docs for more details
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: ${opt:region, self:custom.defaultRegion}
+  lambdaHashingVersion: 20201221
+  environment:
+    EPISODE_TABLE: EpisodeTable-${opt:stage, 'dev'}
+    PODCAST_TABLE: PodcastTable-${opt:stage, 'dev'}
+    S3_BUCKET: 'clubhouse-audio'
+    FFMPEG_PATH: /opt/ffmpeg/ffmpeg
+    FFPROBE_PATH: /opt/ffmpeg/ffprobe
+  apiGateway:
+    shouldStartNameWithService: true
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - dynamodb:Query
+            - dynamodb:Scan
+            - dynamodb:GetItem
+            - dynamodb:PutItem
+            - dynamodb:UpdateItem
+            - dynamodb:DeleteItem
+          Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.EPISODE_TABLE}"
+        - Effect: Allow
+          Action:
+            - dynamodb:Query
+            - dynamodb:Scan
+            - dynamodb:GetItem
+            - dynamodb:PutItem
+            - dynamodb:UpdateItem
+            - dynamodb:DeleteItem
+          Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.PODCAST_TABLE}"
+        - Effect: Allow
+          Action:
+            - s3:PutObject
+            - s3:GetObject
+          Resource: "arn:aws:s3:::${self:custom.clubBucket}/*"
+
+custom:
+  defaultRegion: 'ca-central-1'
+  clubBucket: 'clubhouse-audio'
+  s3:
+    host: localhost
+    directory: ./test/s3
+    cors: ./test/s3/cors.xml
+    allowMismatchedSignatures: true
+  serverless-offline:
+    httpPort: 4000
+  dynamodb:
+    stages:
+      - dev
+    start:
+      port: 8000
+      inMemory: true
+      migrate: true
+      sharedDb: true
+      seed: true
+    seed:
+      test:
+        sources:
+          - table: ${self:provider.environment.EPISODE_TABLE}
+            sources: ["episodeTableSeed.json"]
+          - table: ${self:provider.environment.PODCAST_TABLE}
+            sources: ["podcastTableSeed.json"]
+
+resources:
+  Resources:
+    CognitoUserPool:
+      Type: "AWS::Cognito::UserPool"
+      Properties:
+        MfaConfiguration: OFF
+        UserPoolName: laterclub-user-pool
+        UsernameAttributes:
+          - email
+        Policies:
+          PasswordPolicy:
+            MinimumLength: 6
+            RequireLowercase: False
+            RequireNumbers: True
+            RequireSymbols: False
+            RequireUppercase: True
+    CognitoUserPoolClient:
+      Type: "AWS::Cognito::UserPoolClient"
+      Properties:
+        ClientName: laterclub-user-pool-client
+        GenerateSecret: False
+        UserPoolId:
+          Ref: CognitoUserPool
+    ApiGatewayAuthorizer:
+      DependsOn:
+        - ApiGatewayRestApi
+      Type: AWS::ApiGateway::Authorizer
+      Properties:
+        Name: cognito-authorizer
+        IdentitySource: method.request.header.Authorization
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        Type: COGNITO_USER_POOLS
+        ProviderARNs:
+          - Fn::GetAtt: [CognitoUserPool, Arn]
+    S3Bucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: ${self:provider.environment.S3_BUCKET}
+        CorsConfiguration:
+        CorsRules:
+          - AllowedMethods:
+              - GET
+              - HEAD
+              - PUT
+              - POST
+            AllowedOrigins:
+              - "http://localhost:3000"
+            AllowedHeaders:
+              - "*"
+    EpisodeDynamoDbTable:
+      Type: 'AWS::DynamoDB::Table'
+      DeletionPolicy: Delete
+      Properties:
+        TableName: ${self:provider.environment.EPISODE_TABLE}
+        AttributeDefinitions:
+          -
+            AttributeName: episodeId
+            AttributeType: S
+          - 
+            AttributeName: podcastId
+            AttributeType: S
+          - 
+            AttributeName: pubDate
+            AttributeType: S
+        KeySchema:
+          - AttributeName: episodeId
+            KeyType: HASH
+        GlobalSecondaryIndexes:
+          -
+            IndexName: 'podcastId_index'
+            KeySchema:
+              - AttributeName: podcastId
+                KeyType: HASH
+              - AttributeName: pubDate
+                KeyType: RANGE
+            Projection:
+              ProjectionType: ALL
+            ProvisionedThroughput:
+              ReadCapacityUnits: 1
+              WriteCapacityUnits: 1
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+    PodcastDynamoDbTable:
+      Type: 'AWS::DynamoDB::Table'
+      DeletionPolicy: Delete
+      Properties:
+        TableName: ${self:provider.environment.PODCAST_TABLE}
+        AttributeDefinitions:
+          -
+            AttributeName: podcastId
+            AttributeType: S
+          - 
+            AttributeName: userId
+            AttributeType: S
+        KeySchema:
+          - AttributeName: podcastId
+            KeyType: HASH
+        GlobalSecondaryIndexes:
+          -
+            IndexName: 'userId_index'
+            KeySchema:
+              - AttributeName: userId
+                KeyType: HASH
+            Projection:
+              ProjectionType: ALL
+            ProvisionedThroughput:
+              ReadCapacityUnits: 1
+              WriteCapacityUnits: 1
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+
+functions:
+  authorize:
+    handler: authorize.main
+  club:
+    handler: handler.main
+    events:
+      - http:
+          path: /
+          method: post
+          cors: true
+          authorizer: authorize
+    layers:
+        - {Ref: FfmpegLambdaLayer}
+    environment:
+
+
+layers:
+  ffmpeg:
+    path: layer
+
+plugins:
+  - serverless-s3-local
+  - serverless-offline
+  - serverless-bundle
+  - serverless-dynamodb-local
+
+package:
+  exclude:
+    - .git/**
+    - node_modules/@ffmpeg-installer/win32-ia32/**
+    - node_modules/@ffmpeg-installer/linux-ia32/**
+    - node_modules/@ffmpeg-installer/win32-x64/**
+    - node_modules/@ffmpeg-installer/darwin-x64/**
